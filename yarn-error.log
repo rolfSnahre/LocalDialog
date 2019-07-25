@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add actions-on-google
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.4.3\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.4.3\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Haskell Platform\8.4.3\mingw\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\nodejs\;C:\Users\RolfS\AppData\Local\Android\Sdk\platform-tools;C:\Users\RolfS\AppData\Roaming\npm-cache;C:\Users\RolfS\AppData\Roaming\npm;C:\Program Files\PuTTY\;C:\Program Files\PuTTY\pscp.exe;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Scripts;C:\ProgramData\Anaconda3\Library;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;c:\Users\RolfS\google-cloud-sdk\bin;c:\Users\RolfS\google-cloud-sdk.staging\bin;C:\Users\RolfS\AppData\Roaming\cabal\bin;C:\Users\RolfS\AppData\Roaming\local\bin;C:\Users\RolfS\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\RolfS\GitHubDesktop\bin;C:\Users\RolfS\AppData\Local\GitHubDesktop\bin;C:\Users\RolfS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\RolfS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.6.0\lib;C:\Users\RolfS\AppData\Local\Android\platform-tools;C:\Users\RolfS\AppData\Local\Yarn\bin;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Program Files (x86)\Android\android-sdk\platform-tools\adb;C:\Users\RolfS\AppData\Roaming\npm;C:\Users\RolfS\AppData\Roaming\npm-cache;C:\Program Files\nodejs;C:\Users\RolfS\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Docker Toolbox;C:\Users\RolfS\google-cloud-sdk\bin;
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/dialogflow-fufillment: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65167:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:129541:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130513:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130435:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1129:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "simpleserver",
+    "version": "1.0.0",
+    "description": "loclDialog",
+    "main": "simpleServer.js",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "actions-on-google": "^0.3.0-beta3",
+      "body-parser": "^1.19.0",
+      "dialogflow-fufillment": "^0.5.0",
+      "dialogflow-fulfillment": "^0.6.1",
+      "express": "^4.17.1",
+      "ngrok": "^3.2.3"
+    },
+    "scripts": {
+      "ngrok": "^3.2.1",
+      "dev": "nodemon --inspect simpleServer.js",
+      "tunnel": "ngrok http 8080"
+    },
+    "devDependencies": {
+      "node-fetch": "^2.6.0",
+      "nodemon": "^1.19.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
